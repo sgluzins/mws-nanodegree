@@ -26,16 +26,23 @@
     flex-wrap: wrap;
   }
   .snippet__thumbnail {
-    height: 75px;
-    width: 20%;
+    height: 100%;
+    min-width: calc(45% - 22px);
   }
   .snippet p {
-    width: 70%;
+    width: 50%;
   }
   .snippet__title {
     order: -1;
     width: 100%;
     margin-bottom: 15px;
+  }
+  .recent-news p {
+    overflow: hidden;
+    max-height: 3.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -126,6 +133,9 @@
     font-size: 14px;
     line-height: 1.2em;
   }
+  .recent-news p {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -142,6 +152,14 @@
   }
   .weather {
     order: 3;
+  }
+  .snippet__thumbnail {
+    min-width: 30%;
+  }
+  .recent-news p {
+    width: 60%;
+    overflow: visible;
+    display: initial;
   }
 }
 
