@@ -1,0 +1,31 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+body {
+}
+
+article {
+  margin: auto;
+  max-width: 80%;
+}
+
+h1, h2 {
+  text-align: center;
+
+}
+
+img {
+  width: 50em;
+  max-width: 100%;
+}
